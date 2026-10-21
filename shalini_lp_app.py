@@ -412,4 +412,4 @@ with tab4:
     else:
         bills_df["Month"] = bills_df["bill_date"].str.slice(0, 7)
         months = sorted(bills_df["Month"].unique().tolist(), reverse=True)
-        selected_month = st.selectbox("
+        selected_month = st.selectbox("Select Month", ["All", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])
